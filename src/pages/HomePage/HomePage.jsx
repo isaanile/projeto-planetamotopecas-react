@@ -13,9 +13,9 @@ const HomePage = () => {
       <Header />
       <main>
         <Hero />
-        <Categorias />
-        <ProdutosDestaque />
-        <QuemSomos />
+        <Categorias id="categorias" /> {/* Adicione o ID aqui */}
+        <ProdutosDestaque id="produtos" /> {/* Adicione o ID aqui */}
+        <QuemSomos id="quemsomos" /> {/* Adicione o ID aqui */}
         <Footer />
       </main>
     </div>
