@@ -1,13 +1,24 @@
-import React from 'react';
-import HomePage from './pages/HomePage/HomePage';
-import './styles.css';
+// src/App.js
 
-function App() {
+import React from "react";
+import Navbar from "./components/Navbar";
+import Rotas from "./Rotas"; // Importa o arquivo que contém as rotas
+import "./styles/App.css";
+
+const App = () => {
   return (
-    <div className="app-container">
-      <HomePage />
+    <div className="App">
+      {/* A Navbar é renderizada em todas as páginas */}
+      <Navbar />
+
+      {/* O componente Rotas renderizará a página correta aqui */}
+      <main>
+        <Rotas />
+      </main>
+
+      {/* Você pode adicionar um Footer aqui, se quiser */}
     </div>
   );
-}
+};
 
 export default App;
